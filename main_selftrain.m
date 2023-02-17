@@ -2,7 +2,7 @@ clc,clear;
 folder_now = pwd;
 addpath([folder_now, '\funs']);
 runtimes = 100;
-load ('.\data\gal.mat', 'new_Gal');
+load ('gal.mat');
 
 DATA=new_Gal;
 for r=1:runtimes
