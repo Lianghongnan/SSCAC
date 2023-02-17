@@ -1,2 +1,2 @@
 # SSCAC
-Please run mian_selftrain.m. 
+Please run main_selftrain.m. 
