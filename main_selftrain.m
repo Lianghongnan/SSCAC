@@ -1,10 +1,4 @@
-clc,clear;
-folder_now = pwd;
-addpath([folder_now, '\funs']);
-runtimes = 100;
-load ('gal.mat');
-
-DATA=new_Gal;
+function [SSCAC_final]=main(DATA, runtimes)
 for r=1:runtimes
 gnd=DATA(:,2);
 org_fea=DATA(:,3:end);
@@ -62,5 +56,5 @@ W = A;
         result(r,2)=nmi1;
 end
 SSCAC_final = mean(result,1)
-
+end
 
