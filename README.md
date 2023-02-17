@@ -1,5 +1,9 @@
 # SSCAC
 
 
-Please run main_selftrain.m. 
-Load ('gal.mat') in main_selftrain.m can get the result of gal database in SSCAC_final.
+Please run runMain.m. 
+Select the dataset:
+"gal" denotes "Yeast Galactose Metabolism";
+"yeast" denotes "UCI Yeast database".
+
+The results are shown in "result" in the workspace of MATLAB. 
