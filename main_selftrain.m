@@ -1,7 +1,6 @@
 clc,clear;
 folder_now = pwd;
 addpath([folder_now, '\funs']);
-addpath 'D:\MATLAB\R2019b\bin\Code for NNLRR\YALL1_v1.3'
 runtimes = 100;
 load ('.\data\gal.mat', 'new_Gal');
 
