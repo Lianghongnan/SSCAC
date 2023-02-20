@@ -1,17 +1,17 @@
 
 function [L,t,L_index]=STDP(label_x,label_x_t,unlabel_x,Dc)
 %%
-L=label_x;                 %已标记数据
-U=unlabel_x;               %未标记数据
-t=label_x_t;               %已标记数据的类别
-C=length(unique(t));     %样本的类别总数
+L=label_x;              
+U=unlabel_x;              
+t=label_x_t;              
+C=length(unique(t));     
 %% variables
 data=[L;U];
 % data_t=[label_x_t;unlabel_x_t];
 label=[t;zeros(size(U,1),1)];
 %%
 arrows=DPC(data,Dc,C);
-sort_idx = Find_index(arrows,L,U ); % 返回所有样本的分类序号
+sort_idx = Find_index(arrows,L,U ); 
 %%
 count=1;
 L_index=[1:1:size(L,1)]';
