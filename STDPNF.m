@@ -1,9 +1,9 @@
 function [L,t,out_id]=STDPNF(label_x,label_x_t,unlabel_x,Dc)
 %% The input paramters of the alogrithm
-L=label_x;                 %已标记数据
-t=label_x_t;             %已标记数据的类别
-U=unlabel_x;               %未标记数据
-C=length(unique(t));     %样本的类别总数
+L=label_x;                
+t=label_x_t;             
+U=unlabel_x;              
+C=length(unique(t));     
 %% Use DPC to reveal the data space
 data=[L;U];
 label=[t;zeros(size(U,1),1)];
