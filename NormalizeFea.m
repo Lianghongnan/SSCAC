@@ -25,12 +25,6 @@ end
             
 return;
 
-
-
-
-
-
-
 if row
     [nSmp, mFea] = size(fea);
     if issparse(fea)
@@ -57,3 +51,4 @@ else
     end
 end
             
+
